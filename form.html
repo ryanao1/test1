@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+    <!--<form action="">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>-->
+    <form action="">
+        <fieldset class="colonne">
+            <fieldset id="identification">
+                <legend>Identification</legend>
+                <label> Votre nom:<input type="text" placeholder="Écrire ici"></label>
+                <label>Votre prénom:<input type="text"></label>
+                <label>Votre courriel:<input type="email" required></label>
+                <label>Téléphone:<input type="tel"></label>
+                <label>Âge:<input type="number" min="0" max="125"></label>
+                <label>Addresse web:<input type="url"></label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset class="colonne">
+            <fieldset id="vote">
+                <legend>Votre vote</legend>
+                <label><input type="radio" name="couleur" checked><span></span>Bleu</label>
+                <label><input type="radio" name="couleur"><span></span>Blanc</label>
+                <label><input type="radio" name="couleur"><span></span>Rouge</label>
+            </fieldset>
+            <fieldset id="options">
+                <legend>Vos options</legend>
+                <label><input type="checkbox">Bleu</label>
+                <label><input type="checkbox">Blanc</label>
+                <label><input type="checkbox">Rouge</label>
+            </fieldset>
+            <fieldset>
+                <legend>Vos commentaires</legend>
+                <textarea cols="20" rows="5" placeholder="Écrire vos commentaires ici"></textarea>
+            </fieldset>
+        </fieldset>
+
+        <fieldset id="boutons">
+            <input type="submit" value="Envoi">
+            <input type="reset" value="Remise à 0">
+        </fieldset>
+    </form>
+</body>
+</html>
